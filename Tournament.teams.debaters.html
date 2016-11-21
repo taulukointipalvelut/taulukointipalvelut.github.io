@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>DocStrap Namespace: tournaments</title>
+	<title>DocStrap Namespace: debaters</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,13 +79,15 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Namespace: tournaments</h1>
+	<h1 class="page-title">Namespace: debaters</h1>
 <section>
 
 <header>
     
         <h2>
-        tournaments
+            <span class="ancestors"><a href="Tournament.html">Tournament</a><a href="Tournament.teams.html">.teams</a>.</span>
+        
+        debaters
         </h2>
         
     
@@ -96,7 +98,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>Provides Interfaces related to tournaments</p></div>
+            <div class="description"><p>Interfaces related to teams to debaters</p></div>
         
 
         
@@ -135,7 +137,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-146">line 146</a>
+				 <a href="core.js.html#sunlight-1-line-305">line 305</a>
 			</li>
 		</ul>
 	</dd>
@@ -172,7 +174,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".create"><span class="type-signature"></span>.create(tournament)</h4>
+    <h4 class="name" id=".create"><span class="type-signature"></span>.create(dict)</h4>
     
     
 </dt>
@@ -180,7 +182,7 @@
 
     
     <div class="description">
-        <p>create a tournament. //1.1TESTED//</p>
+        <p>sets debaters to a team.<br>Attention: It throws an error if the specified team has debaters.</p>
     </div>
     
 
@@ -215,7 +217,556 @@
 
         <tr>
             
-                <td class="name"><code>tournament</code></td>
+                <td class="name"><code>dict</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>id of the team to set debaters</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>debaters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>debaters to set</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>r</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>round where the team has the debaters</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="core.js.html">core.js</a>,
+				 <a href="core.js.html#sunlight-1-line-317">line 317</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Throws:</h5>
+    
+            
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        <p>AlreadyExists</p>
+        </div>
+    </dt>
+    <dt>
+        <dl>
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Promise</span>
+
+
+
+            </dd>
+        </dl>
+    </dt>
+</dl>
+
+
+        
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Created team</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".delete"><span class="type-signature"></span>.delete(options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>deletes debaters from specified team.<br>Attention: It throws an error if the specified team does not exist.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>id of the team to delete</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>r</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>round where the team has the debaters</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+	<dt class="important tag-deprecated method-doc-label method-doc-details-label">Deprecated:</dt>
+	
+    <dd class="yes-def tag-deprecated">
+        <ul class="dummy">
+            <li>Yes</li>
+        </ul>
+    </dd>
+    
+    
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="core.js.html">core.js</a>,
+				 <a href="core.js.html#sunlight-1-line-330">line 330</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Throws:</h5>
+    
+            
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        <p>DoesNotExist</p>
+        </div>
+    </dt>
+    <dt>
+        <dl>
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Promise</span>
+
+
+
+            </dd>
+        </dl>
+    </dt>
+</dl>
+
+
+        
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Team</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".find"><span class="type-signature"></span>.find(options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>finds on specified condition(No side effect)</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
@@ -270,38 +821,6 @@
             
                 <td class="attributes">
                 
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>tournament id</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tournament.name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
                     &lt;optional><br>
                 
 
@@ -313,82 +832,14 @@
 
             
 
-            <td class="description last"><p>tournament name</p></td>
+            <td class="description last"><p>id of the team to delete</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>tournament url</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>style</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#Style">Style</a></span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>debating style</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>total_round_num</code></td>
+                <td class="name"><code>r</code></td>
             
 
             <td class="type">
@@ -415,20 +866,20 @@
 
             
 
-            <td class="description last"><p>total round</p></td>
+            <td class="description last"><p>round where the team has the debaters</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>current_round_num</code></td>
+                <td class="name"><code>debaters</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Array.&lt;Number></span>
 
 
 
@@ -449,7 +900,7 @@
 
             
 
-            <td class="description last"><p>current round(default 1)</p></td>
+            <td class="description last"><p>debaters</p></td>
         </tr>
 
     
@@ -501,7 +952,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-158">line 158</a>
+				 <a href="core.js.html#sunlight-1-line-343">line 343</a>
 			</li>
 		</ul>
 	</dd>
@@ -526,90 +977,30 @@
     
 
     
-
+    <h5>Returns:</h5>
     
-</dd>
+            
+<div class="param-desc">
+    <p>Teams</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise</span>
+
+
+
+    </dd>
+</dl>
+
 
         
-            
-<hr>
-<dt>
-    <h4 class="name" id=".delete"><span class="type-signature"></span>.delete()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-176">line 176</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
 
     
 </dd>
@@ -626,7 +1017,7 @@
 
     
     <div class="description">
-        <p>reads all tournaments.//1.1TESTED//</p>
+        <p>returns teams to debaters(No side effect)</p>
     </div>
     
 
@@ -673,7 +1064,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-151">line 151</a>
+				 <a href="core.js.html#sunlight-1-line-310">line 310</a>
 			</li>
 		</ul>
 	</dd>
@@ -701,6 +1092,10 @@
     <h5>Returns:</h5>
     
             
+<div class="param-desc">
+    <p>Teams to debaters</p>
+</div>
+
 
 
 <dl>
@@ -709,7 +1104,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;Array.&lt;<a href="Tournament.html">Tournament</a>>></span>
+<span class="param-type">Promise</span>
 
 
 
@@ -726,19 +1121,165 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".update"><span class="type-signature"></span>.update()</h4>
+    <h4 class="name" id=".update"><span class="type-signature"></span>.update(options)</h4>
     
     
 </dt>
 <dd>
 
     
-
+    <div class="description">
+        <p>updates debaters of specified team<br>Attention: It throws an error if the specified team does not exist.</p>
+    </div>
     
 
     
 
     
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>id of the team</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>r</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>round where the team has the debaters</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>debaters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>debaters of the team</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -777,7 +1318,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-171">line 171</a>
+				 <a href="core.js.html#sunlight-1-line-354">line 354</a>
 			</li>
 		</ul>
 	</dd>
@@ -800,8 +1341,44 @@
     
 
     
+    <h5>Throws:</h5>
+    
+            
+
+    <div class="param-desc">
+    
+        <p>DoesNotExist</p>
+    
+    </div>
+
+
+        
 
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Team</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promi</span>
+
+
+
+    </dd>
+</dl>
+
+
+        
 
     
 </dd>

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>DocStrap Namespace: tournaments</title>
+	<title>DocStrap Class: Tournament</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,14 +79,16 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Namespace: tournaments</h1>
+	<h1 class="page-title">Class: Tournament</h1>
 <section>
 
 <header>
     
         <h2>
-        tournaments
+        Tournament
         </h2>
+        
+            <div class="class-description"><p>A class to operate a tournament.</p></div>
         
     
 </header>
@@ -96,92 +98,14 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>Provides Interfaces related to tournaments</p></div>
-        
-
-        
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-146">line 146</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        <dl>
-            
 <hr>
 <dt>
-    <h4 class="name" id=".create"><span class="type-signature"></span>.create(tournament)</h4>
+    <h4 class="name" id="Tournament"><span class="type-signature"></span>new Tournament(id)</h4>
     
     
 </dt>
 <dd>
 
-    
-    <div class="description">
-        <p>create a tournament. //1.1TESTED//</p>
-    </div>
     
 
     
@@ -215,45 +139,6 @@
 
         <tr>
             
-                <td class="name"><code>tournament</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                <h6 class="method-params-label method-subparams-label">Properties</h6>
-                
-
-<table class="params table table-striped">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Argument</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
                 <td class="name"><code>id</code></td>
             
 
@@ -268,195 +153,10 @@
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
 
             
 
-            <td class="description last"><p>tournament id</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tournament.name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>tournament name</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>tournament url</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>style</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#Style">Style</a></span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>debating style</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>total_round_num</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>total round</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>current_round_num</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>current round(default 1)</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
+            <td class="description last"><p>Unique ID of the tournament</p></td>
         </tr>
 
     
@@ -501,7 +201,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-158">line 158</a>
+				 <a href="core.js.html#sunlight-1-line-186">line 186</a>
 			</li>
 		</ul>
 	</dd>
@@ -530,95 +230,54 @@
     
 </dd>
 
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Namespaces</h3>
+
+        <dl>
+            <dt><a href="namespaces.html#Tournament.adjudicators"><a href="Tournament.adjudicators.html">adjudicators</a></a></dt>
+            <dd></dd>
         
+            <dt><a href="namespaces.html#Tournament.allocations"><a href="Tournament.allocations.html">allocations</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Tournament.debaters"><a href="Tournament.debaters.html">debaters</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Tournament.institutions"><a href="Tournament.institutions.html">institutions</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Tournament.rounds"><a href="Tournament.rounds.html">rounds</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Tournament.teams"><a href="Tournament.teams.html">teams</a></a></dt>
+            <dd></dd>
+        
+            <dt><a href="namespaces.html#Tournament.venues"><a href="Tournament.venues.html">venues</a></a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
             
 <hr>
 <dt>
-    <h4 class="name" id=".delete"><span class="type-signature"></span>.delete()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-176">line 176</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".read"><span class="type-signature"></span>.read()</h4>
+    <h4 class="name" id=".close"><span class="type-signature"></span>.close()</h4>
     
     
 </dt>
@@ -626,7 +285,7 @@
 
     
     <div class="description">
-        <p>reads all tournaments.//1.1TESTED//</p>
+        <p>closes connection to the tournament database.</p>
     </div>
     
 
@@ -673,111 +332,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-151">line 151</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">Promise.&lt;Array.&lt;<a href="Tournament.html">Tournament</a>>></span>
-
-
-
-    </dd>
-</dl>
-
-
-        
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".update"><span class="type-signature"></span>.update()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-171">line 171</a>
+				 <a href="core.js.html#sunlight-1-line-542">line 542</a>
 			</li>
 		</ul>
 	</dd>

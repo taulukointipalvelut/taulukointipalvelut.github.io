@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>DocStrap Namespace: tournaments</title>
+	<title>DocStrap Namespace: allocations</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,13 +79,15 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Namespace: tournaments</h1>
+	<h1 class="page-title">Namespace: allocations</h1>
 <section>
 
 <header>
     
         <h2>
-        tournaments
+            <span class="ancestors"><a href="Tournament.html">Tournament</a>.</span>
+        
+        allocations
         </h2>
         
     
@@ -96,7 +98,7 @@
     <div class="container-overview">
     
         
-            <div class="description"><p>Provides Interfaces related to tournaments</p></div>
+            <div class="description"><p>Provides interfaces related to allocations</p></div>
         
 
         
@@ -135,7 +137,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-146">line 146</a>
+				 <a href="core.js.html#sunlight-1-line-447">line 447</a>
 			</li>
 		</ul>
 	</dd>
@@ -172,7 +174,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".create"><span class="type-signature"></span>.create(tournament)</h4>
+    <h4 class="name" id=".check"><span class="type-signature"></span>.check(options)</h4>
     
     
 </dt>
@@ -180,7 +182,7 @@
 
     
     <div class="description">
-        <p>create a tournament. //1.1TESTED//</p>
+        <p>checks allocation(No side effect)</p>
     </div>
     
 
@@ -215,7 +217,7 @@
 
         <tr>
             
-                <td class="name"><code>tournament</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
@@ -244,6 +246,8 @@
         
 
         
+        <th>Default</th>
+        
 
         <th class="last">Description</th>
     </tr>
@@ -254,45 +258,13 @@
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>check_teams</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>tournament id</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tournament.name</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
+<span class="param-type">Boolean</span>
 
 
 
@@ -312,21 +284,27 @@
             
 
             
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
 
-            <td class="description last"><p>tournament name</p></td>
+            <td class="description last"><p>check team allocation</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>check_adjudicators</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Boolean</span>
 
 
 
@@ -346,21 +324,27 @@
             
 
             
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
 
-            <td class="description last"><p>tournament url</p></td>
+            <td class="description last"><p>check adjudicator allocation</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>style</code></td>
+                <td class="name"><code>check_venues</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#Style">Style</a></span>
+<span class="param-type">Boolean</span>
 
 
 
@@ -380,76 +364,14 @@
             
 
             
-
-            <td class="description last"><p>debating style</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>total_round_num</code></td>
-            
-
-            <td class="type">
-            
+                <td class="default">
                 
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
+                    true
                 
                 </td>
             
 
-            
-
-            <td class="description last"><p>total round</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>current_round_num</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>current round(default 1)</p></td>
+            <td class="description last"><p>check venue allocation</p></td>
         </tr>
 
     
@@ -501,179 +423,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-158">line 158</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".delete"><span class="type-signature"></span>.delete()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-176">line 176</a>
-			</li>
-		</ul>
-	</dd>
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dd>
-
-        
-            
-<hr>
-<dt>
-    <h4 class="name" id=".read"><span class="type-signature"></span>.read()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>reads all tournaments.//1.1TESTED//</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-151">line 151</a>
+				 <a href="core.js.html#sunlight-1-line-510">line 510</a>
 			</li>
 		</ul>
 	</dd>
@@ -709,7 +459,7 @@
     </dt>
     <dd>
         
-<span class="param-type">Promise.&lt;Array.&lt;<a href="Tournament.html">Tournament</a>>></span>
+<span class="param-type">Promise.&lt;Array.&lt;<a href="global.html#Square">Square</a>>></span>
 
 
 
@@ -726,19 +476,373 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".update"><span class="type-signature"></span>.update()</h4>
+    <h4 class="name" id=".get"><span class="type-signature"></span>.get(options)</h4>
     
     
 </dt>
 <dd>
 
     
-
+    <div class="description">
+        <p>get allocation(No side effect)</p>
+    </div>
     
 
     
 
     
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>simple</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Does not use debater results</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>with_venues</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Allocate venues</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>with_adjudicators</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Allocate adjudicators</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    ['by_strength', 'by_side', 'by_past_opponent', 'by_institution']
+                
+                </td>
+            
+
+            <td class="description last"><p>filters to use on computing team allocation</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>adjudicator_filters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    ['by_bubble', 'by_strength', 'by_attendance', 'by_conflict', 'by_institution', 'by_past']
+                
+                </td>
+            
+
+            <td class="description last"><p>filters on computing adjudicator allocation</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>allocation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="global.html#Square">Square</a>></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>if specified, adjudicator/venue allocation will be created based on the allocation</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>force</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>if true, it does not check the database before creating matchups. (false recommended)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
     
 
     
@@ -777,7 +881,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-171">line 171</a>
+				 <a href="core.js.html#sunlight-1-line-467">line 467</a>
 			</li>
 		</ul>
 	</dd>
@@ -802,6 +906,30 @@
     
 
     
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>allocation</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Array.&lt;<a href="global.html#Square">Square</a>>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
 
     
 </dd>
