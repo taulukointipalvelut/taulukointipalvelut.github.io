@@ -33,7 +33,7 @@
 			<li class="dropdown">
 				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="Tournament.adjudicators.html">Tournament.adjudicators</a></li><li><a href="Tournament.adjudicators.results.html">Tournament.adjudicators.results</a></li><li><a href="Tournament.allocations.html">Tournament.allocations</a></li><li><a href="Tournament.debaters.html">Tournament.debaters</a></li><li><a href="Tournament.debaters.results.html">Tournament.debaters.results</a></li><li><a href="Tournament.institutions.html">Tournament.institutions</a></li><li><a href="Tournament.rounds.html">Tournament.rounds</a></li><li><a href="Tournament.teams.html">Tournament.teams</a></li><li><a href="Tournament.teams.debaters.html">Tournament.teams.debaters</a></li><li><a href="Tournament.teams.results.html">Tournament.teams.results</a></li><li><a href="Tournament.venues.html">Tournament.venues</a></li><li><a href="tournaments.html">tournaments</a></li>
+					<li><a href="Tournament.adjudicators.html">Tournament.adjudicators</a></li><li><a href="Tournament.adjudicators.results.html">Tournament.adjudicators.results</a></li><li><a href="Tournament.allocations.html">Tournament.allocations</a></li><li><a href="Tournament.allocations.adjudicators.html">Tournament.allocations.adjudicators</a></li><li><a href="Tournament.allocations.teams.html">Tournament.allocations.teams</a></li><li><a href="Tournament.allocations.venues.html">Tournament.allocations.venues</a></li><li><a href="Tournament.debaters.html">Tournament.debaters</a></li><li><a href="Tournament.debaters.results.html">Tournament.debaters.results</a></li><li><a href="Tournament.institutions.html">Tournament.institutions</a></li><li><a href="Tournament.rounds.html">Tournament.rounds</a></li><li><a href="Tournament.teams.html">Tournament.teams</a></li><li><a href="Tournament.teams.debaters.html">Tournament.teams.debaters</a></li><li><a href="Tournament.teams.results.html">Tournament.teams.results</a></li><li><a href="Tournament.venues.html">Tournament.venues</a></li>
 				</ul>
 			</li>
 			
@@ -301,13 +301,13 @@
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>user_defined_data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
 
 
 
@@ -318,7 +318,7 @@
 
             
 
-            <td class="description last"><p>url of the Adjudicator</p></td>
+            <td class="description last"><p>user defined data</p></td>
         </tr>
 
     
@@ -359,8 +359,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-39">line 39</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-46">line 46</a>
 			</li>
 		</ul>
 	</dd>
@@ -496,13 +496,13 @@
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>user_defined_data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
 
 
 
@@ -513,7 +513,7 @@
 
             
 
-            <td class="description last"><p>url of the Institution</p></td>
+            <td class="description last"><p>user defined data</p></td>
         </tr>
 
     
@@ -554,8 +554,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-59">line 59</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-66">line 66</a>
 			</li>
 		</ul>
 	</dd>
@@ -607,8 +607,6 @@
         <th>Type</th>
 
         
-        <th>Argument</th>
-        
 
         
 
@@ -635,12 +633,6 @@
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-                </td>
-            
 
             
 
@@ -664,12 +656,6 @@
             
             </td>
 
-            
-                <td class="attributes">
-                
-
-                
-                </td>
             
 
             
@@ -695,12 +681,6 @@
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-                </td>
-            
 
             
 
@@ -724,12 +704,6 @@
             
             </td>
 
-            
-                <td class="attributes">
-                
-
-                
-                </td>
             
 
             
@@ -755,12 +729,6 @@
             </td>
 
             
-                <td class="attributes">
-                
-
-                
-                </td>
-            
 
             
 
@@ -785,18 +753,34 @@
             </td>
 
             
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
 
             
 
             <td class="description last"><p>the comment for the adjudicator from the sender</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>user_defined_data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>user defined data</p></td>
         </tr>
 
     
@@ -837,8 +821,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-104">line 104</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-113">line 113</a>
 			</li>
 		</ul>
 	</dd>
@@ -995,6 +979,30 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>user_defined_data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>user defined data</p></td>
+        </tr>
+
+    
     </tbody>
 </table>
 </dl>
@@ -1032,8 +1040,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-88">line 88</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-96">line 96</a>
 			</li>
 		</ul>
 	</dd>
@@ -1249,6 +1257,30 @@
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>user_defined_data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>user defined data</p></td>
+        </tr>
+
+    
     </tbody>
 </table>
 </dl>
@@ -1286,8 +1318,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-68">line 68</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-75">line 75</a>
 			</li>
 		</ul>
 	</dd>
@@ -1436,7 +1468,7 @@
 
         <tr>
             
-                <td class="name"><code>remaining_adjudicators</code></td>
+                <td class="name"><code>panels</code></td>
             
 
             <td class="type">
@@ -1460,7 +1492,7 @@
 
         <tr>
             
-                <td class="name"><code>remaining_adjudicators2</code></td>
+                <td class="name"><code>trainees</code></td>
             
 
             <td class="type">
@@ -1566,8 +1598,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-18">line 18</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-25">line 25</a>
 			</li>
 		</ul>
 	</dd>
@@ -1809,8 +1841,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-115">line 115</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-125">line 125</a>
 			</li>
 		</ul>
 	</dd>
@@ -1959,13 +1991,13 @@ name: &quot;ASIAN&quot;,
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>user_defined_data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
 
 
 
@@ -1976,7 +2008,7 @@ name: &quot;ASIAN&quot;,
 
             
 
-            <td class="description last"><p>url of the Team</p></td>
+            <td class="description last"><p>user defined data</p></td>
         </tr>
 
     
@@ -2017,8 +2049,8 @@ name: &quot;ASIAN&quot;,
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-30">line 30</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-37">line 37</a>
 			</li>
 		</ul>
 	</dd>
@@ -2130,30 +2162,6 @@ name: &quot;ASIAN&quot;,
 
         <tr>
             
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>url of the tournament</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
                 <td class="name"><code>current_round_num</code></td>
             
 
@@ -2223,6 +2231,30 @@ name: &quot;ASIAN&quot;,
         </tr>
 
     
+
+        <tr>
+            
+                <td class="name"><code>user_defined_data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>user defined data</p></td>
+        </tr>
+
+    
     </tbody>
 </table>
 </dl>
@@ -2260,8 +2292,8 @@ name: &quot;ASIAN&quot;,
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-135">line 135</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-145">line 145</a>
 			</li>
 		</ul>
 	</dd>
@@ -2421,13 +2453,13 @@ name: &quot;ASIAN&quot;,
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>user_defined_data</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">Object</span>
 
 
 
@@ -2438,7 +2470,7 @@ name: &quot;ASIAN&quot;,
 
             
 
-            <td class="description last"><p>url of the Venue</p></td>
+            <td class="description last"><p>user defined data</p></td>
         </tr>
 
     
@@ -2479,8 +2511,8 @@ name: &quot;ASIAN&quot;,
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-49">line 49</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-56">line 56</a>
 			</li>
 		</ul>
 	</dd>
@@ -2549,7 +2581,7 @@ name: &quot;ASIAN&quot;,
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
 	
-		on Mon Nov 21st 2016
+		on Wed Nov 30th 2016
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

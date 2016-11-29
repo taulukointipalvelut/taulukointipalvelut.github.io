@@ -33,7 +33,7 @@
 			<li class="dropdown">
 				<a href="namespaces.list.html" class="dropdown-toggle" data-toggle="dropdown">Namespaces<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="Tournament.adjudicators.html">Tournament.adjudicators</a></li><li><a href="Tournament.adjudicators.results.html">Tournament.adjudicators.results</a></li><li><a href="Tournament.allocations.html">Tournament.allocations</a></li><li><a href="Tournament.debaters.html">Tournament.debaters</a></li><li><a href="Tournament.debaters.results.html">Tournament.debaters.results</a></li><li><a href="Tournament.institutions.html">Tournament.institutions</a></li><li><a href="Tournament.rounds.html">Tournament.rounds</a></li><li><a href="Tournament.teams.html">Tournament.teams</a></li><li><a href="Tournament.teams.debaters.html">Tournament.teams.debaters</a></li><li><a href="Tournament.teams.results.html">Tournament.teams.results</a></li><li><a href="Tournament.venues.html">Tournament.venues</a></li><li><a href="tournaments.html">tournaments</a></li>
+					<li><a href="Tournament.adjudicators.html">Tournament.adjudicators</a></li><li><a href="Tournament.adjudicators.results.html">Tournament.adjudicators.results</a></li><li><a href="Tournament.allocations.html">Tournament.allocations</a></li><li><a href="Tournament.allocations.adjudicators.html">Tournament.allocations.adjudicators</a></li><li><a href="Tournament.allocations.teams.html">Tournament.allocations.teams</a></li><li><a href="Tournament.allocations.venues.html">Tournament.allocations.venues</a></li><li><a href="Tournament.debaters.html">Tournament.debaters</a></li><li><a href="Tournament.debaters.results.html">Tournament.debaters.results</a></li><li><a href="Tournament.institutions.html">Tournament.institutions</a></li><li><a href="Tournament.rounds.html">Tournament.rounds</a></li><li><a href="Tournament.teams.html">Tournament.teams</a></li><li><a href="Tournament.teams.debaters.html">Tournament.teams.debaters</a></li><li><a href="Tournament.teams.results.html">Tournament.teams.results</a></li><li><a href="Tournament.venues.html">Tournament.venues</a></li>
 				</ul>
 			</li>
 			
@@ -136,8 +136,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-192">line 192</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-171">line 171</a>
 			</li>
 		</ul>
 	</dd>
@@ -184,7 +184,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id=".create"><span class="type-signature"></span>.create(team)</h4>
+    <h4 class="name" id=".create"><span class="type-signature"></span>.create(team [, force])</h4>
     
     
 </dt>
@@ -215,7 +215,11 @@
         <th>Type</th>
 
         
+        <th>Argument</th>
+        
 
+        
+        <th>Default</th>
         
 
         <th class="last">Description</th>
@@ -235,7 +239,19 @@
             </td>
 
             
+                <td class="attributes">
+                
 
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
             
 
             <td class="description last">
@@ -381,16 +397,23 @@
         </tr>
 
     
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
 
         <tr>
             
-                <td class="name"><code>url</code></td>
+                <td class="name"><code>force</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Boolean</span>
 
 
 
@@ -412,19 +435,12 @@
             
                 <td class="default">
                 
-                    ""
+                    false
                 
                 </td>
             
 
-            <td class="description last"><p>id of the team to create</p></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-            </td>
+            <td class="description last"><p>if true, it creates the specified team regardless of wheter the name specified already exists</p></td>
         </tr>
 
     
@@ -468,8 +484,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-206">line 206</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-185">line 185</a>
 			</li>
 		</ul>
 	</dd>
@@ -702,8 +718,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-220">line 220</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-199">line 199</a>
 			</li>
 		</ul>
 	</dd>
@@ -969,40 +985,6 @@
         </tr>
 
     
-
-        <tr>
-            
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last"><p>id of the team to find</p></td>
-        </tr>
-
-    
     </tbody>
 </table>
 
@@ -1050,8 +1032,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-231">line 231</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-210">line 210</a>
 			</li>
 		</ul>
 	</dd>
@@ -1162,8 +1144,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-198">line 198</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-177">line 177</a>
 			</li>
 		</ul>
 	</dd>
@@ -1204,6 +1186,300 @@
     <dd>
         
 <span class="param-type">Promise.&lt;Array.&lt;<a href="global.html#Team">Team</a>>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".update"><span class="type-signature"></span>.update(team)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>checks whether specified team exists</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>team</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>id of the team to update</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>name of the team to update</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>available</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>id of the team to update</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-234">line 234</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Throws:</h5>
+    
+            
+
+    <div class="param-desc">
+    
+        <p>DoesNotExist</p>
+    
+    </div>
+
+
+        
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Boolean></span>
 
 
 
@@ -1417,46 +1693,6 @@
         </tr>
 
     
-
-        <tr>
-            
-                <td class="name"><code>url</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-                <td class="default">
-                
-                    ""
-                
-                </td>
-            
-
-            <td class="description last"><p>id of the team to update</p></td>
-        </tr>
-
-    
     </tbody>
 </table>
 
@@ -1504,8 +1740,8 @@
 	<dd class="tag-source">
 		<ul class="dummy">
 			<li>
-				<a href="core.js.html">core.js</a>,
-				 <a href="core.js.html#sunlight-1-line-243">line 243</a>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-221">line 221</a>
 			</li>
 		</ul>
 	</dd>
@@ -1624,7 +1860,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a>
 	
-		on Mon Nov 21st 2016
+		on Wed Nov 30th 2016
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

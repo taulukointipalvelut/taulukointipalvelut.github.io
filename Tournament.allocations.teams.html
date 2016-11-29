@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>DocStrap Class: Tournament</title>
+	<title>DocStrap Namespace: teams</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,16 +79,16 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Class: Tournament</h1>
+	<h1 class="page-title">Namespace: teams</h1>
 <section>
 
 <header>
     
         <h2>
-        Tournament
-        </h2>
+            <span class="ancestors"><a href="Tournament.html">Tournament</a><a href="Tournament.allocations.html">.allocations</a>.</span>
         
-            <div class="class-description"><p>A class to operate a tournament.</p></div>
+        teams
+        </h2>
         
     
 </header>
@@ -98,14 +98,92 @@
     <div class="container-overview">
     
         
+            <div class="description"><p>Provides interfaces related to team allocation</p></div>
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-475">line 475</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
 <hr>
 <dt>
-    <h4 class="name" id="Tournament"><span class="type-signature"></span>new Tournament(dict)</h4>
+    <h4 class="name" id=".check"><span class="type-signature"></span>.check(allocation)</h4>
     
     
 </dt>
 <dd>
 
+    
+    <div class="description">
+        <p>checks allocation(No side effect)</p>
+    </div>
     
 
     
@@ -139,16 +217,10 @@
 
         <tr>
             
-                <td class="name"><code>dict</code></td>
+                <td class="name"><code>allocation</code></td>
             
 
             <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-
             
             </td>
 
@@ -156,9 +228,124 @@
 
             
 
-            <td class="description last">
-                <h6 class="method-params-label method-subparams-label">Properties</h6>
-                
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="utab.js.html">utab.js</a>,
+				 <a href="utab.js.html#sunlight-1-line-517">line 517</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Array.&lt;<a href="global.html#Square">Square</a>>></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id=".get"><span class="type-signature"></span>.get( [options])</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>get allocation(No side effect)</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
 
 <table class="params table table-striped">
     <thead>
@@ -184,13 +371,13 @@
 
         <tr>
             
-                <td class="name"><code>id</code></td>
+                <td class="name"><code>options</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Object</span>
 
 
 
@@ -199,6 +386,8 @@
 
             
                 <td class="attributes">
+                
+                    &lt;optional><br>
                 
 
                 
@@ -209,14 +398,157 @@
 
             
 
-            <td class="description last"><p>tournament id</p></td>
+            <td class="description last">
+                <h6 class="method-params-label method-subparams-label">Properties</h6>
+                
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Argument</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>simple</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>if true, it does not use debater results</p></td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>filters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    ['by_strength', 'by_side', 'by_past_opponent', 'by_institution']
+                
+                </td>
+            
+
+            <td class="description last"><p>filters to compute team allocation in <code>standard</code> algorithm</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>force</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>if true, it does not check the database before creating matchups. (false recommended)</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>algorithm</code></td>
             
 
             <td class="type">
@@ -242,42 +574,14 @@
             
 
             
-
-            <td class="description last"><p>tournament name</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>style</code></td>
-            
-
-            <td class="type">
-            
+                <td class="default">
                 
-<span class="param-type"><a href="global.html#Style">Style</a></span>
-
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
+                    'standard'
                 
                 </td>
             
 
-            
-
-            <td class="description last"><p>debate style</p></td>
+            <td class="description last"><p>it computes the allocation using specified algorithm</p></td>
         </tr>
 
     
@@ -329,7 +633,7 @@
 		<ul class="dummy">
 			<li>
 				<a href="utab.js.html">utab.js</a>,
-				 <a href="utab.js.html#sunlight-1-line-160">line 160</a>
+				 <a href="utab.js.html#sunlight-1-line-494">line 494</a>
 			</li>
 		</ul>
 	</dd>
@@ -354,137 +658,30 @@
     
 
     
-
+    <h5>Returns:</h5>
     
-</dd>
-
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-        <h3 class="subsection-title">Namespaces</h3>
-
-        <dl>
-            <dt><a href="namespaces.html#Tournament.adjudicators"><a href="Tournament.adjudicators.html">adjudicators</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#Tournament.allocations"><a href="Tournament.allocations.html">allocations</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#Tournament.debaters"><a href="Tournament.debaters.html">debaters</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#Tournament.institutions"><a href="Tournament.institutions.html">institutions</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#Tournament.rounds"><a href="Tournament.rounds.html">rounds</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#Tournament.teams"><a href="Tournament.teams.html">teams</a></a></dt>
-            <dd></dd>
-        
-            <dt><a href="namespaces.html#Tournament.venues"><a href="Tournament.venues.html">venues</a></a></dt>
-            <dd></dd>
-        </dl>
-    
-
-    
-
-    
-        <h3 class="subsection-title">Methods</h3>
-
-        <dl>
             
-<hr>
-<dt>
-    <h4 class="name" id=".close"><span class="type-signature"></span>.close()</h4>
-    
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        <p>closes connection to the tournament database.</p>
-    </div>
-    
-
-    
-
-    
-
-    
-    
-
-    
-<dl class="details">
-    
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
+<div class="param-desc">
+    <p>allocation</p>
+</div>
 
 
 
-	
-	<dt class="tag-source method-doc-label method-doc-details-label">Source:</dt>
-	<dd class="tag-source">
-		<ul class="dummy">
-			<li>
-				<a href="utab.js.html">utab.js</a>,
-				 <a href="utab.js.html#sunlight-1-line-641">line 641</a>
-			</li>
-		</ul>
-	</dd>
-	
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;Array.&lt;<a href="global.html#Square">Square</a>>></span>
 
-	
 
-	
 
-	
+    </dd>
 </dl>
 
 
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+        
 
     
 </dd>
